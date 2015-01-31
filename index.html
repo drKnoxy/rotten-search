@@ -9,10 +9,40 @@
 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
-
 	</head>
 	<body>
-		testing
+		<div class="nav">
+			<h2 class="nav__tagline">We sorta like movies</h2>	
+			<a href="" class="nav__back-to-search">Back to search</a>
+		</div>
+
+		<div class="search">
+			<h3 class="search__heading">Search for your favorite movie title and have fun!</h3>
+			<p class="search__description">Enter a movie title below and click search to discover great information about your favorite movies.</p>
+			<form class="search__form">
+				<div class="search__input-visual clearfix">
+					<i class="search__icon">ico</i>
+					<button type="submit" class="search__submit">Search</button>
+					<div class="search__query-container">
+						<input type="text" class="search__query" placeholder="Ex. pulp fiction, rugrats">
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="movie-list">
+			<div class="movie-list__nav">
+				<a href="" class="movie-list__nav-right">right</a>
+				<a href="" class="movie-list__nav-left">left</a>
+			</div>
+			<ul class="movie-list__list">
+				<li class="movie-list__item">
+					movie item
+				</li>
+			</ul>
+		</div>
+
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
 		<script src="js/main.js"></script>

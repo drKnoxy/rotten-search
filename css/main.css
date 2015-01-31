@@ -1,12 +1,97 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
 
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+.clearfix:after {
+	clear: both;
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
+body {
+    background: #000;
+    padding: 0 10px;
+}
 
+.tagline {
+    color: #fff;
+    text-transform: lowercase;
+    margin: 0;
+    padding: 0;
+}
 
+/* search page */
+.search__heading {
+    text-align: center;
+    color: #fff;
+}
+.search__description {
+    text-align: center;
+    color: #fff;
+}
 
+.search__form {
+    margin: 0 auto;
+    background: #eee;
+    max-width: 716px;
+    padding: 17px;
+    border-radius: 5px;
+}
+.search__input-visual {
+    background: #fff;
+    border-radius: 4px;
+    line-height: 40px;
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.24);
+}
+.search__query-container {
+	position: relative;
+	margin-left: 50px;
+	margin-right: 100px;
+}
+.search__query {
+	position: absolute;
+	display: block;
+	width: 100%;
+    background: transparent;
+    line-height: 40px;
+    border: 0;
+	padding: 0;
+}
+.search__query:focus {
+	outline: none;
+}
+.search__icon {
+	text-align: center;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: #ddd
+}
+.search__submit {
+    float: right;
+    height: 40px;
+    line-height: 40px;
+    background: #a7cf5e;
+    color: #536a30;
+    text-shadow: 1px 1px 1px rgba(255,255,255, 0.56);
+    border: 1px solid #a2c75c;
+    text-transform: uppercase;
+    padding: 0 14px;
+    border-radius: 5px;
+    box-shadow: inset 1px 1px 1px rgba(255,255,255, 0.9);
+}
 
+/* movie list */
+.back-to-search {
+    float: right;
+    color: #fff;
+}
 
 
 
