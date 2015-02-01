@@ -1,5 +1,10 @@
 html {
 	box-sizing: border-box;
+    background: url('/img/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -15,7 +20,6 @@ html {
 }
 
 body {
-    background: #000;
     padding: 0 10px;
 }
 
@@ -92,8 +96,25 @@ body {
     float: right;
     color: #fff;
 }
+.movie-list__list-container {
+    overflow: scroll;
+}
+.movie-list__list {
+    width: 2750px;
+    margin: 0;
+    padding: 0;
+}
 
-
+.movie-list__item {
+    float: left;
+    margin-right: 20px;
+    background: #eee;
+    width: 230px;
+    line-height: 0;
+}
+.movie-list__img {
+    max-width: 100%;
+}
 
 
 

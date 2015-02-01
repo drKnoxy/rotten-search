@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body>
+	<body ng-app="rottenSearch" ng-controller="SearchController">
 		<div class="nav">
 			<h2 class="nav__tagline">We sorta like movies</h2>	
 			<a href="" class="nav__back-to-search">Back to search</a>
@@ -24,7 +24,11 @@
 					<i class="search__icon">ico</i>
 					<button type="submit" class="search__submit">Search</button>
 					<div class="search__query-container">
-						<input type="text" class="search__query" placeholder="Ex. pulp fiction, rugrats">
+						<input
+							type="text"
+							class="search__query"
+							placeholder="Ex. pulp fiction, rugrats"
+							ng-model="search.query">
 					</div>
 				</div>
 			</form>
@@ -35,11 +39,13 @@
 				<a href="" class="movie-list__nav-right">right</a>
 				<a href="" class="movie-list__nav-left">left</a>
 			</div>
-			<ul class="movie-list__list">
-				<li class="movie-list__item">
-					movie item
-				</li>
-			</ul>
+			<div class="movie-list__list-container">
+				<ul class="movie-list__list">
+					<li class="movie-list__item" ng-repeat="movie in movies">
+						<img ng-src="{{movie.posters.detailed}}" class="movie-list__img">
+					</li>
+				</ul>
+			</div>
 		</div>
 
 
