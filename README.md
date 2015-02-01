@@ -18,6 +18,11 @@ fire up a local server in the root of the project ie. `php -Slocalhost:3000`.
 * `box-sizing` usage, and implementation best practices
 * I haven't used the [BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/) style for CSS before, so I thought I'd give it a shot here
 
+*General*
+* Code organization
+* Using a local server
+
+
 ## Criteria
 
 Assets that this exercise is based on are located in the `reference` directory.
