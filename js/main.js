@@ -1,4 +1,4 @@
-// 
+
 var rottenApi = {
 	apiKey: 'x4vbjjacnn28dzap9ervnzb2',
 	apiUrl: 'http://api.rottentomatoes.com/api/public/v1.0/movies.json',
@@ -7,6 +7,8 @@ var rottenApi = {
 		// Build out our query url
 		var url = this.apiUrl + '?apiKey=' + this.apiKey + '&q=' + query;
 
+		// [same origin policy](http://en.wikipedia.org/wiki/Same-origin_policy)
+		// so we use jsonp 
 		$.ajax({
 			url: url,
 			dataType: 'jsonp',

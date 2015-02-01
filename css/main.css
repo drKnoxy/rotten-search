@@ -154,7 +154,8 @@ button {
 	right: auto;
 }
 .movie-list__list-container {
-	overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 .movie-list__list {
 	width: 3146px;
@@ -168,6 +169,7 @@ button {
 	background: #eee;
 	width: 254px;
 	line-height: 0;
+	list-style: none;
 }
 .movie-list__img {
 	max-width: 100%;
