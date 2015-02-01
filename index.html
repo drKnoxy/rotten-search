@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="css/font.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body ng-app="rottenSearch" ng-controller="SearchController">
+	<body>
 		<div class="nav">
 			<!-- <a href="" class="nav__back-to-search">
 				<i class="icon icon--back"></i>
@@ -26,16 +26,16 @@
 		<div class="search">
 			<h3 class="search__heading">Search for your favorite movie title and have fun!</h3>
 			<p class="search__description">Enter a movie title below and click search to discover great information about your favorite movies.</p>
-			<form class="search__form">
+			<form class="search__form js-search-form">
 				<div class="search__input-visual clearfix">
 					<i class="icon icon--search">ico</i>
 					<button type="submit" class="search__submit">Search</button>
 					<div class="search__query-container">
 						<input
+							autofocus="autofocus"
 							type="text"
-							class="search__query"
-							placeholder="Ex. pulp fiction, rugrats"
-							ng-model="search.query">
+							class="search__query js-search-query"
+							placeholder="Ex. pulp fiction, rugrats">
 					</div>
 				</div>
 			</form>
@@ -47,17 +47,21 @@
 				<a href="" class="movie-list__nav-left">left</a>
 			</div>
 			<div class="movie-list__list-container">
-				<ul class="movie-list__list">
-					<li class="movie-list__item" ng-repeat="movie in movies">
-						<img ng-src="{{movie.posters.detailed}}" class="movie-list__img">
-					</li>
+				<ul class="movie-list__list js-movie-list">
+					<!-- <li class="movie-list__item"><img src="" alt=""></li> -->
+					<!-- <li class="movie-list__item">
+						<img src="" alt="">
+						<div class="movie-list__item-details">
+							<h4>title</h4>
+							<p>year, rating, critical consensus, abridged cast</p>
+						</div>
+					</li> -->
 				</ul>
 			</div>
 		</div>
 
 
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.11/angular.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
