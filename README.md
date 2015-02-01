@@ -9,6 +9,8 @@ fire up a local server in the root of the project ie. `php -Slocalhost:3000`.
 * Querrying a third party api via AJAX and jsonp
 * Running json through a templating engine
 * I opted to use the _Revealing Module Pattern_
+* Regex
+* jQuery usage
 
 *CSS Know-How*
 * Font embedding
