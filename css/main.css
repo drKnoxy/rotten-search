@@ -1,6 +1,6 @@
 html {
 	box-sizing: border-box;
-	background: url('/img/bg.jpg') no-repeat center center fixed;
+	background: url('/img/bg.jpg') no-repeat center center fixed #000;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -56,12 +56,14 @@ button {
 .search__heading {
 	text-align: center;
 	color: #fff;
+	margin: 0 0 25px 0;
 	font-size: 31px;
 }
 .search__description {
 	text-align: center;
 	color: #fff;
 	font-size: 19px;
+	margin-bottom: 54px;
 }
 
 .search__form {
@@ -69,7 +71,7 @@ button {
 	background: #f6f6f6;
 	box-shadow: inset 1px 1px 1px rgba(255,255,255, 0.69), 1px 1px 2px rgba(0,0,0,0.58);
 	max-width: 716px;
-	padding: 17px;
+	padding: 15px 20px;
 	border-radius: 5px;
 	border: 1px solid #050606;
 }
@@ -78,8 +80,12 @@ button {
 	line-height: 40px;
 	background: #fff;
 	border: 1px solid #d6d6d6;
-	border-radius: 4px;
-	box-shadow: inset 2px 2px 5px rgba(0,0,0,0.10);
+	border-radius: 5px;
+	box-shadow: inset 1px 1px 5px rgba(0,0,0,0.10);
+}
+ {
+	
+    width: 100%;
 }
 .search__query-container {
 	position: relative;
