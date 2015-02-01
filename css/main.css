@@ -1,10 +1,10 @@
 html {
 	box-sizing: border-box;
-    background: url('/img/bg.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+	background: url('/img/bg.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 *, *:before, *:after {
 	box-sizing: inherit;
@@ -20,38 +20,66 @@ html {
 }
 
 body {
-    padding: 0 10px;
+	padding: 0 10px;
 }
 
-.tagline {
-    color: #fff;
-    text-transform: lowercase;
-    margin: 0;
-    padding: 0;
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+	font-weight: bold;
+}
+
+button {
+	font-weight: bold;
+}
+
+
+.nav__tagline {
+	color: #fff;
+	text-transform: lowercase;
+	margin: 0;
+	padding: 0;
+}
+
+.nav__back-to-search {
+	color: #fff;
+	float: right;
+	text-decoration: none;
+	text-transform: lowercase;
 }
 
 /* search page */
+.search {
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
 .search__heading {
-    text-align: center;
-    color: #fff;
+	text-align: center;
+	color: #fff;
+	font-size: 31px;
 }
 .search__description {
-    text-align: center;
-    color: #fff;
+	text-align: center;
+	color: #fff;
+	font-size: 19px;
 }
 
 .search__form {
-    margin: 0 auto;
-    background: #eee;
-    max-width: 716px;
-    padding: 17px;
-    border-radius: 5px;
+	margin: 0 auto;
+	background: #f6f6f6;
+	box-shadow: inset 1px 1px 1px rgba(255,255,255, 0.69), 1px 1px 2px rgba(0,0,0,0.58);
+	max-width: 716px;
+	padding: 17px;
+	border-radius: 5px;
+	border: 1px solid #050606;
 }
 .search__input-visual {
-    background: #fff;
-    border-radius: 4px;
-    line-height: 40px;
-    box-shadow: inset 0 2px 5px rgba(0,0,0,0.24);
+	position: relative;
+	line-height: 40px;
+	background: #fff;
+	border: 1px solid #d6d6d6;
+	border-radius: 4px;
+	box-shadow: inset 2px 2px 5px rgba(0,0,0,0.10);
 }
 .search__query-container {
 	position: relative;
@@ -62,58 +90,81 @@ body {
 	position: absolute;
 	display: block;
 	width: 100%;
-    background: transparent;
-    line-height: 40px;
-    border: 0;
+	background: transparent;
+	line-height: 40px;
+	border: 0;
 	padding: 0;
 }
 .search__query:focus {
 	outline: none;
 }
-.search__icon {
-	text-align: center;
-    float: left;
-    width: 40px;
-    height: 40px;
-    background: #ddd
+.icon--search {
+	float: left;
 }
+
 .search__submit {
-    float: right;
-    height: 40px;
-    line-height: 40px;
-    background: #a7cf5e;
-    color: #536a30;
-    text-shadow: 1px 1px 1px rgba(255,255,255, 0.56);
-    border: 1px solid #a2c75c;
-    text-transform: uppercase;
-    padding: 0 14px;
-    border-radius: 5px;
-    box-shadow: inset 1px 1px 1px rgba(255,255,255, 0.9);
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	height: 42px;
+	line-height: 42px;
+	background: #d8e376;
+	background: -moz-linear-gradient(top,  #d8e376 0%, #a6ce5e 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8e376), color-stop(100%,#a6ce5e));
+	background: -webkit-linear-gradient(top,  #d8e376 0%,#a6ce5e 100%);
+	background: -o-linear-gradient(top,  #d8e376 0%,#a6ce5e 100%);
+	background: -ms-linear-gradient(top,  #d8e376 0%,#a6ce5e 100%);
+	background: linear-gradient(to bottom,  #d8e376 0%,#a6ce5e 100%);
+
+	color: #536a30;
+	text-shadow: 1px 1px 1px rgba(255,255,255, 0.56);
+	border: 1px solid #a2c75c;
+	text-transform: uppercase;
+	padding: 0 28px;
+	border-radius: 5px;
+	box-shadow: inset 1px 1px 1px rgba(255,255,255, 0.9);
 }
 
 /* movie list */
 .back-to-search {
-    float: right;
-    color: #fff;
+	float: right;
+	color: #fff;
+}
+.movie-list {
+	position: relative;
+}
+.movie-list__nav-left,
+.movie-list__nav-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -50px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255,255,255,0.4);
+}
+.movie-list__nav-left {
+	left: 0;
+	right: auto;
 }
 .movie-list__list-container {
-    overflow: scroll;
+	overflow: scroll;
 }
 .movie-list__list {
-    width: 2750px;
-    margin: 0;
-    padding: 0;
+	width: 3146px;
+	margin: 0;
+	padding: 0;
 }
 
 .movie-list__item {
-    float: left;
-    margin-right: 20px;
-    background: #eee;
-    width: 230px;
-    line-height: 0;
+	float: left;
+	margin-right: 32px;
+	background: #eee;
+	width: 254px;
+	line-height: 0;
 }
 .movie-list__img {
-    max-width: 100%;
+	max-width: 100%;
 }
 
 
