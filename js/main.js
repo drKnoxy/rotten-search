@@ -19,7 +19,7 @@ var rottenApi = {
 	}
 }
 
-var movieList = (function(){
+var movieList = (function() {
 	var tmplSelector = '.js-movie-list';
 	var movies = [];
 	var tmpl = '<li class="movie-list__item"><img src="{img}" class="movie-list__img"></li>';
@@ -72,7 +72,7 @@ var movieList = (function(){
 	};
 })();
 
-var searchForm = (function(){
+var searchForm = (function() {
 	var searchSelector = '.js-search-form';
 	var submit = function(callback) {
 		$('.js-search-form').submit(function(e){
@@ -105,6 +105,6 @@ $(function(){
 			// Hide Search
 
 			// Show back to search link
-		})
-	})
+		});
+	});
 });
